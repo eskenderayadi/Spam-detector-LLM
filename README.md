@@ -15,35 +15,6 @@ The model architecture and training workflow are based on Sebastian Raschka's bo
 - `requirements-dev.txt` - optional notebook and training dependencies.
 - `Dockerfile` - container entry point for hosted deployment.
 
-## Model Files
-
-The trained checkpoint `GPT2-with-LoRA-ft.pth` is about 533 MB, and the raw GPT-2 checkpoint under `gpt2/124M/` is also large. These files are intentionally excluded from normal Git commits because GitHub blocks files over 100 MB.
-
-For deployment, provide the fine-tuned checkpoint using one of these options:
-
-1. Put `GPT2-with-LoRA-ft.pth` in the project root before running the app.
-2. Set `MODEL_PATH` to a checkpoint path.
-3. Upload the checkpoint to durable storage and set `MODEL_URL` so the app can download it at startup.
-
-Examples:
-
-```bash
-MODEL_PATH=/models/GPT2-with-LoRA-ft.pth chainlit run app.py
-```
-
-```bash
-MODEL_URL=https://example.com/GPT2-with-LoRA-ft.pth chainlit run app.py
-```
-
-If you want the checkpoint in GitHub, use Git LFS:
-
-```bash
-git lfs install
-git lfs track "*.pth"
-git add .gitattributes
-git add -f GPT2-with-LoRA-ft.pth
-```
-
 ## Local Setup
 
 Use Python 3.10 or 3.11.

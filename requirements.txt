@@ -1,0 +1,9 @@
+chainlit>=1.2.0
+matplotlib>=3.7.1
+numpy>=1.26
+pandas>=2.2.1
+psutil>=5.9.5
+requests>=2.31.0
+tiktoken>=0.5.1
+torch>=2.2.2,<2.6; sys_platform == 'darwin' and platform_machine == 'x86_64'
+torch>=2.2.2; sys_platform != 'darwin' or platform_machine != 'x86_64'

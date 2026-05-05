@@ -1,0 +1,16 @@
+.git
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.chainlit/
+.ipynb_checkpoints/
+
+GPT2-with-LoRA-ft.pth
+gpt2/
+*.pt
+*.pth
+*.ckpt
+main.ipynb

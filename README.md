@@ -17,13 +17,13 @@ The model architecture and training workflow are based on Sebastian Raschka's bo
 
 ## Local Setup
 
-Use Python 3.10 or 3.11.
+Use Python 3.10 or 3.11 and `uv` commands.
 
 ```bash
-python -m venv .venv
+uv venv .venv
 source .venv/bin/activate
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+uv pip install --upgrade pip
+uv pip install -r requirements.txt
 ```
 
 ## Recreate the Fine-Tuned Checkpoint
@@ -31,14 +31,10 @@ python -m pip install -r requirements.txt
 Install the development dependencies:
 
 ```bash
-python -m pip install -r requirements-dev.txt
+uv pip install -r requirements-dev.txt
 ```
 
-Run `main.ipynb` from top to bottom. The notebook downloads GPT-2 weights, trains the LoRA classifier, evaluates it on the spam dataset, and saves:
-
-```text
-GPT2-with-LoRA-ft.pth
-```
+Run `main.ipynb` from top to bottom. The notebook downloads GPT-2 weights, trains the LoRA classifier, evaluates it on the spam dataset, and saves it as `GPT2-with-LoRA-ft.pth`
 
 **Note**: GPU acceleration is strongly recommended for training (e.g. Google Colab using "GPU-T4" runtime available as of the writing (May, 2026).
 

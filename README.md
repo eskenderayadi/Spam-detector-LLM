@@ -1,6 +1,6 @@
 # Spam Detector LLM
 
-A Chainlit app that classifies text messages as `spam` or `not spam` using a GPT-2 124M-style classifier fine-tuned with LoRA.
+A Chainlit app that classifies text messages as `spam` or `not spam` using OpenAI's GPT-2 124M-style classifier fine-tuned with LoRA.
 
 The model architecture and training workflow are based on Sebastian Raschka's book and reference implementation. See [Citation](#citation).
 

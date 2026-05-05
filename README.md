@@ -52,7 +52,7 @@ Use Python 3.10 or 3.11.
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
-uv -m pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 Make sure the fine-tuned model is available:
@@ -67,7 +67,7 @@ Run the Chainlit app:
 chainlit run app.py
 ```
 
-Open the local URL shown by Chainlit, usually `http://localhost:8000`.
+Chainlit will automatically open the local URL. If it doesn’t, go to `http://localhost:8000`.
 
 ## Recreate the Fine-Tuned Checkpoint
 

@@ -2,7 +2,7 @@
 
 A Chainlit app that classifies text messages as `spam` or `not spam` using OpenAI's GPT-2 124M-style classifier fine-tuned with LoRA (Low-Rank Adaptation of Large Language Models).
 
-The model architecture and training workflow are based on Sebastian Raschka's book and reference implementation. See [Citation](#citation).
+The model architecture and training workflow are based on Sebastian Raschka's book and reference implementation. See [Citation](#citation). LoRA fine-tuning method is proposed by Hu et al. (2021).
 
 ## Repository Contents
 
@@ -50,11 +50,15 @@ You can now send any message you’ve received if you have any doubts about whet
 
 ## Citation
 
-This project uses code and ideas from:
+- This project uses code and ideas from:
 
 Raschka, Sebastian. *Build a Large Language Model (From Scratch).* Manning Publications, 2024. ISBN: 978-1633437166. Book page: <https://www.manning.com/books/build-a-large-language-model-from-scratch>. Reference code: <https://github.com/rasbt/LLMs-from-scratch>.
 
 The original reference code is published by Sebastian Raschka under the Apache License 2.0.
+
+- LoRA method from:
+
+Edward J Hu, yelong shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen. _LoRA: Low-Rank Adaptation of Large Language Models._ International Conference on Learning Representations, 2022. URL: <https://doi.org/10.48550/arXiv.2106.09685>.
 
 ## Built With
 

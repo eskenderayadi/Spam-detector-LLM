@@ -55,3 +55,9 @@ This project uses code and ideas from:
 Raschka, Sebastian. *Build a Large Language Model (From Scratch).* Manning Publications, 2024. ISBN: 978-1633437166. Book page: <https://www.manning.com/books/build-a-large-language-model-from-scratch>. Reference code: <https://github.com/rasbt/LLMs-from-scratch>.
 
 The original reference code is published by Sebastian Raschka under the Apache License 2.0.
+
+
+### Built With
+- Chainlit
+- OpenAI API
+- Python

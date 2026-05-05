@@ -26,20 +26,6 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-Make sure the fine-tuned model is available:
-
-```bash
-ls GPT2-with-LoRA-ft.pth
-```
-
-Run the Chainlit app:
-
-```bash
-chainlit run app.py
-```
-
-Chainlit will automatically open the local URL. If it doesn’t, go to `http://localhost:8000`.
-
 ## Recreate the Fine-Tuned Checkpoint
 
 Install the development dependencies:
@@ -54,7 +40,18 @@ Run `main.ipynb` from top to bottom. The notebook downloads GPT-2 weights, train
 GPT2-with-LoRA-ft.pth
 ```
 
-GPU acceleration is strongly recommended for training.
+**Note**: GPU acceleration is strongly recommended for training (e.g. Google Colab using "GPU-T4" runtime available as of the writing (May, 2026).
+
+Finally, run the Chainlit app:
+
+```bash
+chainlit run app.py
+```
+
+Chainlit will automatically open the local URL. If it doesn’t, go to `http://localhost:8000`.
+
+You can now send any message you’ve received if you have any doubts about whether it is spam or not.
+
 
 ## Deploy With Docker
 

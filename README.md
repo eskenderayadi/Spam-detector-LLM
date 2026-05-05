@@ -56,8 +56,8 @@ Raschka, Sebastian. *Build a Large Language Model (From Scratch).* Manning Publi
 
 The original reference code is published by Sebastian Raschka under the Apache License 2.0.
 
+## Built With
 
-### Built With
 - Chainlit
 - OpenAI API
 - Python

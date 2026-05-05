@@ -48,45 +48,6 @@ Chainlit will automatically open the local URL. If it doesn’t, go to `http://l
 
 You can now send any message you’ve received if you have any doubts about whether it is spam or not.
 
-
-## Deploy With Docker
-
-Build the image:
-
-```bash
-docker build -t spam-detector-llm .
-```
-
-Run with a mounted local checkpoint:
-
-```bash
-docker run --rm -p 8000:8000 \
-  -e MODEL_PATH=/models/GPT2-with-LoRA-ft.pth \
-  -v "$PWD/GPT2-with-LoRA-ft.pth:/models/GPT2-with-LoRA-ft.pth:ro" \
-  spam-detector-llm
-```
-
-Run with a hosted checkpoint:
-
-```bash
-docker run --rm -p 8000:8000 \
-  -e MODEL_URL=https://example.com/GPT2-with-LoRA-ft.pth \
-  spam-detector-llm
-```
-
-## Deploy On A Hosted Platform
-
-Most Python container platforms work with this repository. Use these settings:
-
-- Build command: `pip install -r requirements.txt`
-- Start command: `chainlit run app.py --host 0.0.0.0 --port $PORT`
-- Environment variable: `MODEL_URL` or `MODEL_PATH`
-- Python version: `3.11`
-
-For Hugging Face Spaces, create a Docker Space and push this repository. Add `MODEL_URL` as a Space secret, or upload the checkpoint to the Space storage and set `MODEL_PATH`.
-
-For Render, Railway, Fly.io, or similar platforms, deploy from the Dockerfile and configure `MODEL_URL` as an environment variable.
-
 ## Citation
 
 This project uses code and ideas from:

@@ -37,7 +37,15 @@ uv pip install -r requirements-dev.txt
 
 Run `main.ipynb` from top to bottom. The notebook downloads GPT-2 weights, trains the LoRA classifier, evaluates it on the spam dataset, and saves it as `GPT2-with-LoRA-ft.pth`
 
-**Note**: GPU acceleration is strongly recommended for training (e.g. Google Colab using "GPU-T4" runtime available as of the writing (May, 2026).
+**Note**: GPU acceleration is strongly recommended for training (e.g. Google Colab using "GPU-T4" runtime available as of the writing (May, 2026). Below, the tutorial on the screenshots:
+
+- Drag and drop train, validation and test CSV files and `main.ipynb` to the Colab folder:
+<img width="1020" height="371" alt="image" src="https://github.com/user-attachments/assets/52f470cc-e95e-4247-9bcf-a3c8a5704765" />
+
+- Select any supported GPU runtime, wait a moment for its setting up and run all cells: 
+<img width="413" height="426" alt="image" src="https://github.com/user-attachments/assets/0ea261ad-612a-4520-9c5d-5753da951e39" />
+
+
 
 Finally, run the Chainlit app:
 

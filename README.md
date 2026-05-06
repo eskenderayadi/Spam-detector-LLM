@@ -47,6 +47,8 @@ Run `main.ipynb` from top to bottom. The notebook downloads GPT-2 weights, train
 
 
 
+
+
 Finally, run the Chainlit app:
 
 ```bash

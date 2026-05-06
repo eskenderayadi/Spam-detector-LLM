@@ -39,7 +39,7 @@ Run `main.ipynb` from top to bottom. The notebook downloads GPT-2 weights, train
 
 **Note**: GPU acceleration is strongly recommended for training (e.g. Google Colab using "GPU-T4" runtime available as of the writing (May, 2026). Below, the tutorial on the screenshots:
 
-- Drag and drop train, validation and test CSV files and `main.ipynb` to the Colab folder:
+- Open `main.ipynb` on Colab and drag and drop the highlighted files to Colab:
 <img width="1007" height="336" alt="image" src="https://github.com/user-attachments/assets/a94bee03-2acd-4600-ba86-acc009bd2237" />
 
 

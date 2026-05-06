@@ -15,7 +15,6 @@ The model architecture and training workflow are based on Sebastian Raschka's [b
 - `gpt_download.py` - helper for downloading GPT-2 weights used during training.
 - `requirements.txt` - runtime dependencies for deploying the Chainlit app.
 - `requirements-dev.txt` - optional notebook and training dependencies.
-- `Dockerfile` - container entry point for hosted deployment.
 
 ## Local Setup
 

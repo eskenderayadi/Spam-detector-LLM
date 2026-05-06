@@ -29,11 +29,6 @@ uv pip install -r requirements.txt
 
 ## Recreate the Fine-Tuned Checkpoint
 
-Install the development dependencies:
-
-```bash
-uv pip install -r requirements-dev.txt
-```
 
 Run `main.ipynb` from top to bottom. The notebook downloads GPT-2 weights, trains the LoRA classifier, evaluates it on the spam dataset, and saves it as `GPT2-with-LoRA-ft.pth`
 
@@ -42,15 +37,12 @@ Run `main.ipynb` from top to bottom. The notebook downloads GPT-2 weights, train
 - Open `main.ipynb` on Colab and drag and drop the highlighted files to Colab:
 <img width="1007" height="336" alt="image" src="https://github.com/user-attachments/assets/a94bee03-2acd-4600-ba86-acc009bd2237" />
 
-
 - Select any supported GPU runtime, wait a moment for its setting up and run all cells: 
 <img width="413" height="426" alt="image" src="https://github.com/user-attachments/assets/0ea261ad-612a-4520-9c5d-5753da951e39" />
 
+- Add the generated `GPT2-with-LoRA-ft.pth` file to your local cloned folder.
 
-
-
-
-Finally, run the Chainlit app:
+- Finally, run the Chainlit app:
 
 ```bash
 chainlit run app.py

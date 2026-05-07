@@ -66,5 +66,5 @@ Edward J Hu, yelong shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wa
 ## Built With
 
 - Chainlit
-- OpenAI API
+- OpenAI
 - Python

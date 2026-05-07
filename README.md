@@ -1,8 +1,8 @@
 # Spam Detector LLM
 
-A Chainlit app that classifies text messages as `spam` or `not spam` using OpenAI's GPT-2 124M-style classifier fine-tuned with  State-of-the-art Parameter-Efficient Fine-Tuning (PEFT) **LoRA** (Low-Rank Adaptation).
+A [Chainlit](https://github.com/Chainlit/chainlit) app that classifies text messages as `spam` or `not spam` using OpenAI's GPT-2 124M-style classifier fine-tuned with  State-of-the-art Parameter-Efficient Fine-Tuning (PEFT) **LoRA** (Low-Rank Adaptation).
 
-The model architecture and training workflow are based on Sebastian Raschka's [book](https://www.manning.com/books/build-a-large-language-model-from-scratch) and [reference implementation](https://github.com/rasbt/LLMs-from-scratch). See [Citation](#citation).
+The model architecture and training workflow is inspired by Sebastian Raschka's [book](https://www.manning.com/books/build-a-large-language-model-from-scratch) and [reference implementation](https://github.com/rasbt/LLMs-from-scratch). See [Citation](#citation).
 
 **LoRA** is a parameter-efficient fine-tuning method proposed by Hu et al. (2021) that reduces the size of subsequent checkpoints. See [Citation](#citation). You may refer to the official Microsoft repository at [microsoft/LoRA](https://github.com/microsoft/LoRA) for further details and implementation examples.
 

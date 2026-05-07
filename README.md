@@ -17,7 +17,7 @@ The model architecture and training workflow are inspired by Sebastian Raschkaâ€
 
 ## Local Setup
 
-Use Python 3.10 or 3.11 and `uv` commands.
+Use Python 3.10 or 3.11 and [`uv`](https://github.com/astral-sh/uv) commands.
 
 ```bash
 uv venv .venv

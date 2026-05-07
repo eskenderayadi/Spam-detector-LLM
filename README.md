@@ -13,7 +13,7 @@ The model architecture and training workflow are inspired by Sebastian Raschkaâ€
 - `train.csv`, `validation.csv`, `test.csv` - SMS spam classification splits.
 - `gpt_download.py` - helper for downloading GPT-2 weights used during training.
 - `requirements.txt` - runtime dependencies for deploying the Chainlit app.
-- `requirements-dev.txt` - optional notebook and training dependencies.
+
 
 ## Local Setup
 

@@ -1,11 +1,5 @@
-# Copyright (c) Sebastian Raschka under Apache License 2.0 (see LICENSE.txt).
-# Source for "Build a Large Language Model From Scratch"
-#   - https://www.manning.com/books/build-a-large-language-model-from-scratch
-# Code: https://github.com/rasbt/LLMs-from-scratch
-#
-# This file collects all the relevant code that we covered thus far
-# throughout Chapters 2-6.
-# This file can be run as a standalone script.
+# Source: Raschka, Sebastian. Build A Large Language Model (From Scratch). 
+#          Manning, 2024. ISBN: 978-1633437166.
 
 import os
 from pathlib import Path
